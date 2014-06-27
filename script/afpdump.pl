@@ -37,7 +37,7 @@ adpdump.pl - Dump IBM AFP data to HTML
 =cut
 
 my %desc;
-foreach my $type qw( Record Triplet PTX/ControlSequence ) {
+foreach my $type (qw( Record Triplet PTX/ControlSequence )) {
     require "Parse/AFP/$type.pm";
     open my $fh, $INC{"Parse/AFP/$type.pm"} or die $!;
     while (<$fh>) {
