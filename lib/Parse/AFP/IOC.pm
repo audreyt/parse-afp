@@ -5,9 +5,9 @@ package Parse::AFP::IOC;
 use base 'Parse::AFP::Record';
 
 use constant SUBFORMAT => (
-    Reserved1       => 'a',     # leading 00 of the next item
+    Reserved1       => 'H2',     # leading 00 of the next item
     XOffset         => 'n',
-    Reserved2       => 'a',     # leading 00 of the next item
+    Reserved2       => 'H2',     # leading 00 of the next item
     YOffset         => 'n',
     XOrientation    => 'H4',
     YOrientation    => 'H4',
